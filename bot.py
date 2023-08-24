@@ -1,26 +1,31 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
-# Function to handle /start command
 def start(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id, text="WIZZO is Online!")
     log_message(update.message.text)
 
-# Function to handle all other messages
 def handle_message(update, context):
     # Log the received message
     log_message(update.message.text)
     
-    # Predefined replies
-    replies = {
-        "hello": "Hello from TheWizzoBot!",
-        "how are you": "I'm just a bot, but I'm working fine!"
-    }
-    
-    # Send the coded reply if available, otherwise send "Not available"
-    response = replies.get(update.message.text.lower(), "Not available")
-    context.bot.send_message(chat_id=update.effective_chat.id, text=response)
+    # Hardcoded replies
+    message_text = update.message.text.lower()
 
-# Function to log received messages
+    if "hello" in message_text or "hi" in message_text:
+        context.bot.send_message(chat_id=update.effective_chat.id, text="Hey there! WIZZO at your service. Ready to make things fly?")
+    elif "how are you" in message_text:
+        context.bot.send_message(chat_id=update.effective_chat.id, text="Always soaring high and ready to assist. What can WIZZO do for you today?")
+    elif "who are you" in message_text:
+        context.bot.send_message(chat_id=update.effective_chat.id, text="I'm WIZZO, your trusty wingman. Here to help you soar to new heights!")
+    elif "thanks" in message_text or "thank you" in message_text:
+        context.bot.send_message(chat_id=update.effective_chat.id, text="Anytime, partner! Remember, the sky's the limit with WIZZO by your side.")
+    elif "help" in message_text:
+        context.bot.send_message(chat_id=update.effective_chat.id, text="Of course! Just let me know what you need, and I'll help you take off.")
+    elif "bye" in message_text or "goodbye" in message_text:
+        context.bot.send_message(chat_id=update.effective_chat.id, text="Safe travels! Remember, whenever you need to soar, WIZZO's here to help.")
+    else:
+        context.bot.send_message(chat_id=update.effective_chat.id, text="Not sure about that one, but I'm always here to help you fly high. Ask away!")
+
 def log_message(message):
     with open("message_log.txt", "a") as log_file:
         log_file.write(message + "\n")

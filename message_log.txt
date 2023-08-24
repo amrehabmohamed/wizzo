@@ -3,3 +3,29 @@ check
 anything
 come one man
 hey
+hello
+dl
+how are you
+hello
+check
+OpenAI Error: You exceeded your current quota, please check your plan and billing details.
+check
+hey
+check
+hey
+gogo
+hi
+hey
+how are you
+who are you
+hey
+hello
+bye
+/start
+check
+/start
+hello
+/start
+hello
+how are you
+bye

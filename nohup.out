@@ -1,0 +1,76 @@
+  File "/home/ubuntu/TheWizzoBot/bot.py", line 24
+    except Exception as e:
+                          ^
+IndentationError: unindent does not match any outer indentation level
+Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 379, in _network_loop_retry
+    if not action_cb():
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 337, in polling_action_cb
+    updates = self.bot.get_updates(self.last_update_id,
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/telegram/bot.py", line 67, in decorator
+    result = func(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/telegram/bot.py", line 2138, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 330, in post
+    result = self._request_wrapper('POST', url,
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 248, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 379, in _network_loop_retry
+    if not action_cb():
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 337, in polling_action_cb
+    updates = self.bot.get_updates(self.last_update_id,
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/telegram/bot.py", line 67, in decorator
+    result = func(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/telegram/bot.py", line 2138, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 330, in post
+    result = self._request_wrapper('POST', url,
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 248, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 379, in _network_loop_retry
+    if not action_cb():
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 337, in polling_action_cb
+    updates = self.bot.get_updates(self.last_update_id,
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/telegram/bot.py", line 67, in decorator
+    result = func(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/telegram/bot.py", line 2138, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 330, in post
+    result = self._request_wrapper('POST', url,
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 248, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 379, in _network_loop_retry
+    if not action_cb():
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 337, in polling_action_cb
+    updates = self.bot.get_updates(self.last_update_id,
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/telegram/bot.py", line 67, in decorator
+    result = func(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/telegram/bot.py", line 2138, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 330, in post
+    result = self._request_wrapper('POST', url,
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 248, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
